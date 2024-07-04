@@ -4,10 +4,10 @@
 
 @layer base {
     html, body {
-        @apply w-screen h-full min-h-screen
+        @apply min-h-screen
     }
 
     #root {
-        @apply w-full h-full relative
+        @apply w-full h-full flex flex-col
     }
 }
