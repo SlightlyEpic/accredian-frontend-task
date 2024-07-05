@@ -18,7 +18,9 @@ function ReferralBenefits() {
     const [catIdx, setCatIdx] = useState(0);
 
     return (
-        <div className='w-full h-full max-w-screen-xl p-4 py-8 flex flex-col items-center gap-8'>
+        <div className='relative w-full h-full max-w-screen-xl p-4 py-8 flex flex-col items-center gap-8'>
+            <div className='invisible absolute -top-48 h-px' id='benefits' />
+
             <div className='font-semibold text-xl'>
                 <span className='text-black'>What Are The </span>
                 <span className='text-azure-600'>Referral Benefits?</span>
@@ -33,6 +35,7 @@ function ReferralBenefits() {
                     <div className='h-max flex flex-col rounded-md shadow-md text-sm font-semibold'>
                         {categories.map((cat, i) => (
                             <div
+                                key={i}
                                 className={tw(
                                     'w-full flex border-b border-b-gray-300 last:border-b-0 p-4 first:rounded-t-md last:rounded-b-md',
                                     'items-center justify-center cursor-pointer',

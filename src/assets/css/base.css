@@ -10,4 +10,42 @@
     #root {
         @apply w-full h-full flex flex-col
     }
+
+    * {
+        @apply scroll-smooth
+    }
+
+
+    details > summary {
+        list-style: none;
+    }
+    
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+@layer utilities {
+    .step-radial-gradient {
+        /* background: radial-gradient(
+            theme(colors.azure.300) 0%,
+            theme(colors.azure.300) 33%,
+            theme(colors.azure.400) 33%,
+            theme(colors.azure.400) 67%,
+            theme(colors.azure.500) 67%,
+            theme(colors.azure.500) 100%
+        ) */
+
+        --stopA: 40%;
+        --stopB: 55%;
+
+        background: radial-gradient(
+            #92d0feaa 0%,
+            #92d0feaa var(--stopA),
+            #5fb4fbaa var(--stopA),
+            #5fb4fbaa var(--stopB),
+            #3a95f7aa var(--stopB),
+            #3a95f7aa 100%
+        )
+    }
 }

@@ -1,3 +1,4 @@
+import ReferFAQ from '@/components/refer/FAQ';
 import HowDoIRefer from '@/components/refer/HowDoIRefer';
 import ReferralBenefits from '@/components/refer/ReferralBenefits';
 
@@ -47,6 +48,9 @@ function ReferPage() {
             
             {/* What are the referral benefits */}
             <ReferralBenefits />
+
+            {/* FAQs */}
+            <ReferFAQ />
         </div>
     );
 }

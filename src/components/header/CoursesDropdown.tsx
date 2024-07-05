@@ -28,7 +28,10 @@ function CoursesDropdown() {
                 onMouseLeave={hideDebounced}
             >
                 <div>Courses</div>
-                <ChevronDown className='transition-transform duration-300 rotate-0 group-hover:rotate-180' />
+                <ChevronDown className={tw(
+                    'transition-transform duration-300 rotate-0',
+                    showCourses && 'rotate-180'
+                )} />
 
                 {showCourses && <portals.InPortal node={modalPortalNode}>
                     <div 
