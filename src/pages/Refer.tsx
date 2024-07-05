@@ -1,4 +1,5 @@
 import HowDoIRefer from '@/components/refer/HowDoIRefer';
+import ReferralBenefits from '@/components/refer/ReferralBenefits';
 
 function ReferPage() {
     return (
@@ -43,6 +44,9 @@ function ReferPage() {
 
             {/* How Do I Refer */}
             <HowDoIRefer />
+            
+            {/* What are the referral benefits */}
+            <ReferralBenefits />
         </div>
     );
 }
