@@ -2,7 +2,7 @@ import CoursesDropdown from './header/CoursesDropdown';
 
 function Header() {
     return (
-        <header className='z-10 sticky top-0 w-full h-max flex flex-col'>
+        <header className='z-[90] sticky top-0 w-full h-max flex flex-col'>
             <div className='w-full h-16 bg-azure-100 flex items-center justify-center gap-4 px-4'>
                 <div className='text-black/80 font-medium text-lg'>
                     Navigate your ideal career path with tailored expert advice

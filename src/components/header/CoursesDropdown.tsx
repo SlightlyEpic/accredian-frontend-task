@@ -32,7 +32,7 @@ function CoursesDropdown() {
 
                 {showCourses && <portals.InPortal node={modalPortalNode}>
                     <div 
-                        className='fixed z-10 mt-36 h-[calc(100vh-9rem)] w-screen bg-black bg-opacity-40' 
+                        className='fixed z-[100] mt-36 h-[calc(100vh-9rem)] w-screen bg-black bg-opacity-40' 
                         onMouseEnter={hideDebounced}
                     >
                         <div
