@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Accredian Frontend Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend repo: https://github.com/SlightlyEpic/accredian-frontend-task  
+Frontend deploy URL: https://accredian-frontend-task-orpin.vercel.app/  
 
-Currently, two official plugins are available:
+Backend repo: https://github.com/SlightlyEpic/accredian-backend-task  
+Backend deploy URL: https://accredian-backend-task-3u3j.onrender.com  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The MySQL database is hosted on Aiven's free tier  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Tech stack:**
+- TypeScript
+- React
+- TailwindCSS
 
-- Configure the top-level `parserOptions` property like this:
+Video demo:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+https://github.com/SlightlyEpic/accredian-backend-task/assets/42976178/1a2f6110-8c2d-471f-b6f7-ed2db10e3c71
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**(The first form submission might take time to load due to render's cold start)**
+
+Ideally, the referral system should be protected by auth but since that wasn't asked I did not add auth.
