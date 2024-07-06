@@ -17,7 +17,7 @@ function Header() {
                 <div className='h-10 w-full max-w-screen-xl flex items-center justify-between gap-8'>
                     {/* Left */}
                     <div className='h-full flex items-center gap-8'>
-                        <img src='/images/brand/accredian-logo.png' className='h-full' />
+                        <img src='/images/brand/accredian-logo.png' className='h-full cursor-pointer' onClick={() => location.pathname = '/'} />
                         <CoursesDropdown />
                     </div>
 

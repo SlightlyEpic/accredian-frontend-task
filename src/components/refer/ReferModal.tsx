@@ -66,7 +66,6 @@ function ReferModal({ show, setShow }: ReferModalProps) {
             .then(res => {
                 if(res.msg === 'Success') {
                     setSuccess(true);
-                    setTimeout(() => setSuccess(false), 2000);
                     return;
                 }
 
