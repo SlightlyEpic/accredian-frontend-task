@@ -151,7 +151,7 @@ function ReferModal({ show, setShow }: ReferModalProps) {
                             <div>
                                 <div className='flex justify-between'>
                                     <label className='font-semibold'>Referee Name:</label>
-                                    <div className='text-sm text-rose-500'>{errors.referrerName}</div>
+                                    <div className='text-sm text-rose-500'>{errors.referredName}</div>
                                 </div>
                                 <input
                                     name='referredName'
