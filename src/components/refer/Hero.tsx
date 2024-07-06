@@ -1,4 +1,8 @@
-function ReferHero() {
+interface ReferHeroProps {
+    showModal: () => unknown
+}
+
+function ReferHero({ showModal }: ReferHeroProps) {
     return (
         <>
             <div className='w-full flex justify-center px-4'>
@@ -20,7 +24,10 @@ function ReferHero() {
                         <div className='text-2xl'>
                             Get a chance to win up-to <span className='text-azure-600 text-4xl whitespace-nowrap font-bold'>Rs. 15,000</span>
                         </div>
-                        <button className='w-max bg-azure-600 hover:bg-azure-700 rounded-md p-2 px-6 text-white font-semibold'>
+                        <button 
+                            className='w-max bg-azure-600 hover:bg-azure-700 rounded-md p-2 px-6 text-white font-semibold'
+                            onClick={showModal}
+                        >
                             Refer Now
                         </button>
                     </div>

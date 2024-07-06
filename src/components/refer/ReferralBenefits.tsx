@@ -14,7 +14,11 @@ const categories = [
     'Business Analytics',
 ];
 
-function ReferralBenefits() {
+interface ReferralBenefitsProps {
+    showModal: () => unknown
+}
+
+function ReferralBenefits({ showModal }: ReferralBenefitsProps) {
     const [catIdx, setCatIdx] = useState(0);
 
     return (
@@ -80,7 +84,10 @@ function ReferralBenefits() {
                 </div>
             </div>
 
-            <button className='rounded-md p-4 px-12 bg-azure-600 hover:bg-azure-700 text-white font-semibold my-8'>
+            <button 
+                className='rounded-md p-4 px-12 bg-azure-600 hover:bg-azure-700 text-white font-semibold my-8'
+                onClick={showModal}
+            >
                 Refer Now
             </button>
         </div>

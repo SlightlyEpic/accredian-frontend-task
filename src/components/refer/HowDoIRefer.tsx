@@ -1,6 +1,10 @@
 import { ClipboardPen, UserPlus, Wallet } from 'lucide-react';
 
-function HowDoIRefer() {
+interface HowDoIReferProps {
+    showModal: () => unknown
+}
+
+function HowDoIRefer({ showModal }: HowDoIReferProps) {
     return (
         <div className='w-full h-full bg-azure-100 p-4 flex flex-col gap-8 items-center'>
             <div className='font-bold text-2xl mt-4'>
@@ -105,7 +109,10 @@ function HowDoIRefer() {
                 </div>
             </div>
 
-            <button className='rounded-md p-4 px-12 bg-azure-600 hover:bg-azure-700 text-white font-semibold'>
+            <button 
+                className='rounded-md p-4 px-12 bg-azure-600 hover:bg-azure-700 text-white font-semibold'
+                onClick={showModal}
+            >
                 Refer Now
             </button>
         </div>
